@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+	
+  <test  name="Personal Loan">
+	  	<parameter name="URL" value="PersonalLoan.com"/>
+
+    <classes>
+		
+      <class name="test.NG.day1">
+		  <methods>
+			  <include name="Demo"></include>
+		  </methods>
+      
+      </class>
+      
+	
+	  <class name="test.NG.day2"/>
+      <class name="test.NG.day4"/>
+    </classes>
+    </test>
+    <test name="Car Loan">
+			<parameter name="URL" value="CarLoan.com"/>
+
+		<classes>
+			<class name="test.NG.day3">
+				<methods>
+					<exclude name="API.*"></exclude>
+				</methods>
+			</class>
+			
+			
+			
+		</classes>
+    
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
